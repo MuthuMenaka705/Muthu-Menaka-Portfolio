@@ -2,1263 +2,1068 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
 
-    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+  <meta
+    name="description"
+    content="Muthu Menaka N — Python Developer and Full Stack Developer building practical web, AI and machine learning solutions."
+  >
 
-    <meta
-        name="description"
-        content="Muthu Menaka N — Python Developer and Full Stack Developer Portfolio"
-    >
+  <meta
+    name="keywords"
+    content="Muthu Menaka, Python Developer, Web Developer, Full Stack Developer, Django, React, Machine Learning, AI"
+  >
 
-    <meta name="theme-color" content="#06080c">
+  <meta name="author" content="Muthu Menaka N">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#05070a">
 
-    <title>Muthu Menaka N — Python Developer</title>
+  <meta
+    property="og:type"
+    content="website"
+  >
 
+  <meta
+    property="og:title"
+    content="Muthu Menaka N | Python & Full Stack Developer"
+  >
 
-    <!-- =====================================================
-         GOOGLE FONTS
-    ====================================================== -->
+  <meta
+    property="og:description"
+    content="Python and Full Stack Developer building practical web and AI solutions."
+  >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta
+    property="og:url"
+    content="https://muthumenaka705.github.io/Muthu-Menaka-Portfolio/"
+  >
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+  <title>
+    Muthu Menaka N | Python & Full Stack Developer
+  </title>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
-    <!-- CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muthu Menaka N",
+    "jobTitle": "Python Developer / Full Stack Developer",
+    "email": "mailto:muthumenaka705@gmail.com",
+    "url": "https://muthumenaka705.github.io/Muthu-Menaka-Portfolio/",
+    "sameAs": [
+      "https://github.com/MuthuMenaka705",
+      "https://www.linkedin.com/in/muthu-menaka-46a31034b"
+    ],
+    "knowsAbout": [
+      "Python",
+      "JavaScript",
+      "SQL",
+      "Django",
+      "Django REST Framework",
+      "React.js",
+      "Machine Learning",
+      "Deep Learning",
+      "XGBoost",
+      "Vision Transformer",
+      "PostgreSQL",
+      "MySQL"
+    ]
+  }
+  </script>
 
 </head>
 
 
 <body>
 
+  <!-- PARTICLE BACKGROUND -->
 
-<!-- =====================================================
-     PARTICLE BACKGROUND
-====================================================== -->
+  <canvas id="particles"></canvas>
 
-<canvas id="particleCanvas"></canvas>
-
-
-<!-- =====================================================
-     CURSOR GLOW
-====================================================== -->
-
-<div class="cursor-glow"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
 
-<!-- =====================================================
-     NAVBAR
-====================================================== -->
+  <!-- NAVIGATION -->
 
-<header class="navbar" id="navbar">
+  <header class="navbar" id="navbar">
 
     <a href="#home" class="logo">
-        MUTHU<span>.</span>
+      MM<span>.</span>
     </a>
 
 
-    <nav class="nav-links">
+    <nav
+      class="nav-links"
+      id="navLinks"
+      aria-label="Main navigation"
+    >
 
-        <a href="#home" class="nav-link active">
-            Home
-        </a>
-
-        <a href="#about" class="nav-link">
-            About
-        </a>
-
-        <a href="#skills" class="nav-link">
-            Skills
-        </a>
-
-        <a href="#projects" class="nav-link">
-            Projects
-        </a>
-
-        <a href="#experience" class="nav-link">
-            Experience
-        </a>
-
-        <a href="#education" class="nav-link">
-            Education
-        </a>
-
-        <a href="#contact" class="nav-link">
-            Contact
-        </a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
 
     </nav>
 
 
-    <a
-        href="#contact"
-        class="nav-cta magnetic"
-    >
-        Let's Talk
-        <span>↗</span>
+    <a href="#contact" class="nav-cta">
+      Let's talk
     </a>
 
 
     <button
-        class="menu-btn"
-        id="menuBtn"
-        aria-label="Open menu"
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      type="button"
     >
-        ☰
+
+      <span></span>
+      <span></span>
+
     </button>
 
-</header>
-
-
-<!-- =====================================================
-     MOBILE MENU
-====================================================== -->
-
-<div class="mobile-menu" id="mobileMenu">
-
-    <a href="#home">Home</a>
-
-    <a href="#about">About</a>
-
-    <a href="#skills">Skills</a>
-
-    <a href="#projects">Projects</a>
-
-    <a href="#experience">Experience</a>
-
-    <a href="#education">Education</a>
-
-    <a href="#contact">Contact</a>
-
-</div>
+  </header>
 
 
 
-<!-- =====================================================
-     MAIN
-====================================================== -->
+  <main>
 
-<main>
+    <!-- HERO -->
 
+    <section class="hero" id="home">
 
-<!-- =====================================================
-     HERO
-====================================================== -->
-
-<section
-    class="hero section"
-    id="home"
->
-
-    <div class="hero-grid"></div>
-
-    <div class="hero-orb orb-one"></div>
-
-    <div class="hero-orb orb-two"></div>
+      <div class="hero-grid">
 
 
-    <div class="hero-content reveal">
+        <div class="hero-content">
 
-        <div class="availability">
+          <div class="availability">
 
             <span></span>
 
-            Available for opportunities
+            Open to opportunities
 
-        </div>
-
-
-        <p class="eyebrow">
-
-            PYTHON DEVELOPER
-            <span>/</span>
-            FULL STACK DEVELOPER
-
-        </p>
+          </div>
 
 
-        <h1>
+          <p class="eyebrow">
+            Hello, I'm
+          </p>
 
-            Engineering
 
-            <span class="gradient-text">
-                digital experiences
+          <h1>
+            Muthu Menaka
+            <span>N</span>
+          </h1>
+
+
+          <div
+            class="typing-wrapper"
+            aria-label="Professional roles"
+          >
+
+            <span class="typing-prefix">
+              &lt;
             </span>
 
-            that matter.
+            <span id="typingText">
+              Python Developer
+            </span>
 
-        </h1>
+            <span class="typing-cursor"></span>
+
+            <span class="typing-prefix">
+              /&gt;
+            </span>
+
+          </div>
 
 
-        <p class="hero-description">
+          <p class="hero-description">
 
-            I build modern web applications, intelligent
-            machine learning solutions and scalable digital
-            experiences using Python, Django, React and AI
-            technologies.
+            I'm a Python and Full Stack Developer focused on
+            building practical web applications and exploring
+            AI and machine learning to solve real-world problems.
 
+          </p>
+          
+
+
+          <div class="hero-actions">
+
+            <a
+              href="#projects"
+              class="btn btn-primary"
+            >
+              <span>View my work</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+
+
+            <a
+              href="#contact"
+              class="btn btn-secondary"
+            >
+              Get in touch
+            </a>
+
+          </div>
+
+
+          <div class="hero-links">
+
+            <a
+              href="https://github.com/MuthuMenaka705"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+
+
+            <a
+              href="https://www.linkedin.com/in/muthu-menaka-46a31034b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="hero-visual">
+
+          <div class="cyber-ring ring-one"></div>
+          <div class="cyber-ring ring-two"></div>
+          <div class="cyber-ring ring-three"></div>
+
+
+          <div class="hero-orb">
+
+            <div class="orb-core">
+              MM
+            </div>
+
+
+            <div class="orb-label label-one">
+              PYTHON
+            </div>
+
+
+            <div class="orb-label label-two">
+              AI / ML
+            </div>
+
+
+            <div class="orb-label label-three">
+              WEB
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="scroll-indicator">
+
+        <span></span>
+
+        Scroll to explore
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+
+             
+
+  
+
+
+
+    <!-- SKILLS -->
+
+    <section class="section skills" id="skills">
+
+      <div class="section-label">
+        01/ Skills
+      </div>
+
+
+      <div class="section-intro">
+
+        <h2>
+          Tools I use to
+          <span>build.</span>
+        </h2>
+
+
+        <p>
+          A practical mix of development,
+          AI and database technologies.
         </p>
 
-
-        <div class="hero-buttons">
-
-            <a
-                href="#projects"
-                class="btn btn-primary magnetic"
-            >
-                Explore Projects
-                <span>↗</span>
-            </a>
+      </div>
 
 
-            <a
-                href="#contact"
-                class="btn btn-secondary magnetic"
-            >
-                Contact Me
-            </a>
-
-        </div>
-
-    </div>
+      <div class="skills-grid">
 
 
+        <article class="skill-card">
 
-    <!-- 3D PROFILE -->
-
-    <div class="profile-wrapper reveal">
-
-        <div
-            class="profile-card"
-            id="profileCard"
-        >
-
-            <div class="profile-card-top">
-
-                <span>
-                    PORTFOLIO / 2026
-                </span>
-
-                <span class="status-dot"></span>
-
-            </div>
-
-
-            <div class="profile-avatar">
-                MM
-            </div>
-
-
-            <h2>
-                Muthu Menaka N
-            </h2>
-
-
-            <p>
-
-                Python Developer<br>
-                Full Stack Developer
-
-            </p>
-
-
-            <div class="profile-line"></div>
-
-
-            <div class="profile-stats">
-
-                <div>
-
-                    <strong>
-                        7.83
-                    </strong>
-
-                    <span>
-                        CGPA
-                    </span>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        02
-                    </strong>
-
-                    <span>
-                        Internships
-                    </span>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        04
-                    </strong>
-
-                    <span>
-                        Projects
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="floating-chip chip-one">
-                Django
-            </div>
-
-
-            <div class="floating-chip chip-two">
-                Machine Learning
-            </div>
-
-
-            <div class="floating-chip chip-three">
-                React.js
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ABOUT
-====================================================== -->
-
-<section
-    class="section"
-    id="about"
->
-
-    <div class="section-heading reveal">
-
-        <span class="section-number">
+          <span class="skill-index">
             01
-        </span>
+          </span>
+
+          <h3>
+            Programming
+          </h3>
+
+          <p>
+            Python · JavaScript · SQL
+          </p>
+
+        </article>
 
 
-        <div>
+        <article class="skill-card">
 
-            <p class="eyebrow">
-                ABOUT ME
-            </p>
-
-            <h2>
-
-                Turning ideas into
-                <span>
-                    digital products.
-                </span>
-
-            </h2>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="about-grid">
-
-
-        <div class="about-main glass-card reveal">
-
-            <p class="large-text">
-
-                I'm
-                <strong>Muthu Menaka N</strong>,
-                a Computer Science and Engineering
-                student and aspiring Python / Full Stack
-                Developer passionate about building
-                practical and intelligent applications.
-
-            </p>
-
-
-            <p>
-
-                My development journey covers web
-                development, backend engineering,
-                databases, machine learning and
-                deep learning. I enjoy transforming
-                technical problems into clean,
-                practical solutions.
-
-            </p>
-
-
-            <div class="about-tags">
-
-                <span>Python</span>
-
-                <span>JavaScript</span>
-
-                <span>Django</span>
-
-                <span>React.js</span>
-
-                <span>Machine Learning</span>
-
-                <span>Deep Learning</span>
-
-                <span>SQL</span>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="about-side">
-
-
-            <div class="mini-card reveal">
-
-                <span class="mini-icon">
-                    01
-                </span>
-
-                <h3>
-                    Development
-                </h3>
-
-                <p>
-                    Building responsive full-stack
-                    applications with modern
-                    frontend and backend technologies.
-                </p>
-
-            </div>
-
-
-            <div class="mini-card reveal">
-
-                <span class="mini-icon">
-                    02
-                </span>
-
-                <h3>
-                    AI & ML
-                </h3>
-
-                <p>
-                    Exploring machine learning,
-                    deep learning and computer
-                    vision applications.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SKILLS
-====================================================== -->
-
-<section
-    class="section"
-    id="skills"
->
-
-    <div class="section-heading reveal">
-
-        <span class="section-number">
+          <span class="skill-index">
             02
-        </span>
+          </span>
 
+          <h3>
+            Web Development
+          </h3>
 
-        <div>
+          <p>
+            HTML5 · CSS3 · JavaScript · React.js · Bootstrap · Django · DRF
+          </p>
 
-            <p class="eyebrow">
-                TECH STACK
-            </p>
+        </article>
 
-            <h2>
 
-                Tools I use to
-                <span>
-                    build.
-                </span>
+        <article class="skill-card">
 
-            </h2>
+          <span class="skill-index">
+            02
+          </span>
 
-        </div>
+          <h3>
+            AI / Machine Learning
+          </h3>
 
-    </div>
+          <p>
+            Machine Learning · Deep Learning · XGBoost · ViT · Streamlit
+          </p>
 
+        </article>
 
 
-    <div class="skills-layout">
+        <article class="skill-card">
 
+          <span class="skill-index">
+            03
+          </span>
 
-        <div class="skills-orbit reveal">
+          <h3>
+            Databases
+          </h3>
 
-            <div class="orbit-ring ring-one"></div>
+          <p>
+            PostgreSQL · MySQL · CRUD Operations
+          </p>
 
-            <div class="orbit-ring ring-two"></div>
+        </article>
 
 
-            <div class="orbit-center">
-                MM
-            </div>
+        <article class="skill-card">
 
-
-            <div class="orbit-item item-one">
-                PY
-            </div>
-
-            <div class="orbit-item item-two">
-                JS
-            </div>
-
-            <div class="orbit-item item-three">
-                AI
-            </div>
-
-            <div class="orbit-item item-four">
-                DB
-            </div>
-
-        </div>
-
-
-
-        <div class="skills-grid">
-
-
-            <div class="skill-card reveal">
-
-                <span>01</span>
-
-                <h3>
-                    Programming
-                </h3>
-
-                <p>
-                    Python · JavaScript · SQL
-                </p>
-
-            </div>
-
-
-            <div class="skill-card reveal">
-
-                <span>02</span>
-
-                <h3>
-                    Web Development
-                </h3>
-
-                <p>
-                    HTML5 · CSS3 · JavaScript ·
-                    React.js · Bootstrap · Django · DRF
-                </p>
-
-            </div>
-
-
-            <div class="skill-card reveal">
-
-                <span>03</span>
-
-                <h3>
-                    Machine Learning
-                </h3>
-
-                <p>
-                    Machine Learning · XGBoost ·
-                    SMOTE · Streamlit
-                </p>
-
-            </div>
-
-
-            <div class="skill-card reveal">
-
-                <span>04</span>
-
-                <h3>
-                    Deep Learning
-                </h3>
-
-                <p>
-                    Deep Learning · Vision Transformer
-                    (ViT)
-                </p>
-
-            </div>
-
-
-            <div class="skill-card reveal">
-
-                <span>05</span>
-
-                <h3>
-                    Databases
-                </h3>
-
-                <p>
-                    PostgreSQL · MySQL ·
-                    CRUD Operations
-                </p>
-
-            </div>
-
-
-            <div class="skill-card reveal">
-
-                <span>06</span>
-
-                <h3>
-                    Tools & Concepts
-                </h3>
-
-                <p>
-                    Git · GitHub · VS Code · Postman ·
-                    REST APIs · OOP · Agile
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROJECTS
-====================================================== -->
-
-<!-- PROJECTS -->
-<section class="section projects-section" id="projects">
-  <div class="section-heading reveal">
-    <span class="section-kicker">03 / PROJECTS</span>
-    <h2>Things I’ve <span>Built.</span></h2>
-    <p>Projects combining web development, AI and practical problem solving.</p>
-  </div>
-
-  <div class="projects-grid">
-
-    <!-- Fraud Detection -->
-    <article class="project-card reveal">
-      <div class="project-image">
-        <img
-           src="data:image/jpeg;base64,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"
-           alt="Credit card payment card"
-        >
-        <div class="project-image-overlay">
-          <span>Machine Learning</span>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <div class="project-top">
-          <span class="project-number">01</span>
-          <span class="project-date">MAY 2025</span>
-        </div>
-
-        <h3>Fraud Detection in Credit Card Transactions</h3>
-
-        <p>
-          Web-based credit card fraud detection system using Flask and
-          machine learning to classify transactions as fraudulent or legitimate.
-        </p>
-
-        <div class="project-tech">
-          <span>Python</span>
-          <span>Flask</span>
-          <span>XGBoost</span>
-          <span>SMOTE</span>
-          <span>ML</span>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- Retinal AI -->
-    <article class="project-card reveal">
-      <div class="project-image">
-        <img
-          src="https://cirurgia.ccocentrooftalmologico.com.br/clinica/imagens/glaucoma-cronico.jpg"
-          alt="Retinal fundus image showing the inside of the eye"
-        >
-        <div class="project-image-overlay">
-          <span>Deep Learning + ViT</span>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <div class="project-top">
-          <span class="project-number">02</span>
-          <span class="project-date">MAR 2026</span>
-        </div>
-
-        <h3>AI-Based Retinal Eye Disease Detection System</h3>
-
-        <p>
-          Deep learning and Vision Transformer based system for classifying
-          retinal images into disease categories with <strong>93.48% accuracy</strong>.
-        </p>
-
-        <div class="project-tech">
-          <span>Python</span>
-          <span>Deep Learning</span>
-          <span>ViT</span>
-          <span>Image Processing</span>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- Nova Personal AI -->
-    <article class="project-card reveal">
-      <div class="project-image">
-        <img
-          src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=90"
-          alt="Artificial intelligence technology"
-        >
-        <div class="project-image-overlay">
-          <span>Artificial Intelligence</span>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <div class="project-top">
-          <span class="project-number">03</span>
-          <span class="project-date">PROJECT</span>
-        </div>
-
-        <h3>Nova Personal AI</h3>
-
-        <p>
-          A personal AI project designed around intelligent assistance,
-          automation and a modern conversational user experience.
-        </p>
-
-        <div class="project-tech">
-          <span>Python</span>
-          <span>AI</span>
-          <span>Automation</span>
-          <span>Web</span>
-        </div>
-      </div>
-    </article>
-
-
-    <!-- Student Support -->
-    <article class="project-card reveal">
-      <div class="project-image">
-        <img
-           src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=90"
-           alt="Student support and customer service management"
-        >
-        <div class="project-image-overlay">
-          <span>Web Application</span>
-        </div>
-      </div>
-
-      <div class="project-content">
-        <div class="project-top">
-          <span class="project-number">04</span>
-          <span class="project-date">PROJECT</span>
-        </div>
-
-        <h3>Student Support &amp; Ticket Management System</h3>
-
-        <p>
-          A web-based platform concept for managing student support requests,
-          organizing tickets and improving communication between students and support teams.
-        </p>
-
-        <div class="project-tech">
-          <span>Python</span>
-          <span>Django</span>
-          <span>Database</span>
-          <span>CRUD</span>
-        </div>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- =====================================================
-     EXPERIENCE
-====================================================== -->
-
-<section
-    class="section"
-    id="experience"
->
-
-    <div class="section-heading reveal">
-
-        <span class="section-number">
+          <span class="skill-index">
             04
-        </span>
+          </span>
+
+          <h3>
+            Tools
+          </h3>
+
+          <p>
+            Git · GitHub · VS Code · Postman
+          </p>
+
+        </article>
 
 
-        <div>
+        <article class="skill-card">
 
-            <p class="eyebrow">
-                EXPERIENCE
-            </p>
+          <span class="skill-index">
+            06
+          </span>
 
-            <h2>
+          <h3>
+            Core Concepts
+          </h3>
 
-                Experience that
-                <span>
-                    shaped my skills.
-                </span>
+          <p>
+            REST APIs · OOP · Agile · Version Control
+          </p>
 
-            </h2>
-
-        </div>
-
-    </div>
+        </article>
 
 
+      </div>
 
-    <div class="timeline">
-
-
-        <!-- SIFY -->
-
-        <div class="timeline-item reveal">
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="timeline-date">
-                JUL 2025
-            </div>
-
-
-            <div class="timeline-content glass-card">
-
-                <p class="company">
-                    SIFY TECHNOLOGIES
-                </p>
-
-
-                <h3>
-                    Frontend Development Intern
-                </h3>
-
-
-                <p>
-
-                    Developed a responsive login page
-                    using HTML, CSS, JavaScript and
-                    Bootstrap.
-
-                </p>
-
-
-                <div class="experience-tags">
-
-                    <span>HTML5</span>
-
-                    <span>CSS3</span>
-
-                    <span>JavaScript</span>
-
-                    <span>Bootstrap</span>
-
-                </div>
-
-            </div>
-
-        </div>
+    </section>
 
 
 
-        <!-- HAPPIEST MINDS -->
+    <!-- PROJECTS -->
 
-        <div class="timeline-item reveal">
+    <section class="section projects" id="projects">
 
-            <div class="timeline-dot"></div>
-
-
-            <div class="timeline-date">
-                JAN 2026 — MAR 2026
-            </div>
+      <div class="section-label">
+        03 / Projects
+      </div>
 
 
-            <div class="timeline-content glass-card">
+      <div class="section-intro">
 
-                <p class="company">
-                    HAPPIEST MINDS TECHNOLOGIES
-                </p>
-
-
-                <h3>
-                    Python Intern
-                </h3>
+        <h2>
+        
+          Projects
+        </h2>
 
 
-                <p>
+        <p>
+          Projects where I explored AI,
+          machine learning and web development.
+        </p>
 
-                    Worked with Python, Django and
-                    database management, including
-                    Django CRUD operations.
-
-                </p>
+      </div>
 
 
-                <div class="experience-tags">
+      <div class="projects-grid">
 
-                    <span>Python</span>
 
-                    <span>Django</span>
+        <!-- RETINAL PROJECT -->
 
-                    <span>Database</span>
+        <article class="project-card">
 
-                    <span>CRUD</span>
+          <div class="project-image">
 
-                </div>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Retinal eye image for AI disease detection"
+              loading="lazy"
+            >
+
+            <div class="image-shine"></div>
+
+            <span class="project-tag">
+              AI / DEEP LEARNING
+            </span>
+
+          </div>
+
+
+          <div class="project-body">
+
+            <div class="project-meta">
+
+              <span>01</span>
+
+              <span>
+                MAR 2026
+              </span>
 
             </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     EDUCATION
-====================================================== -->
-
-<section
-    class="section"
-    id="education"
->
-
-    <div class="section-heading reveal">
-
-        <span class="section-number">
-            05
-        </span>
-
-
-        <div>
-
-            <p class="eyebrow">
-                EDUCATION
-            </p>
-
-            <h2>
-
-                Foundation for
-                <span>
-                    what's next.
-                </span>
-
-            </h2>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="education-card glass-card reveal">
-
-
-        <div class="education-year">
-
-            2022<br>
-            —<br>
-            2026
-
-        </div>
-
-
-        <div class="education-info">
-
-            <p class="eyebrow">
-                B.E. COMPUTER SCIENCE AND ENGINEERING
-            </p>
 
 
             <h3>
-                Dr. G.U. Pope College of Engineering
+              AI-Based Retinal Eye Disease Detection System
             </h3>
 
 
             <p>
-                Anna University
+
+              A deep learning system that classifies retinal
+              images into disease categories using image
+              preprocessing and Vision Transformer technology,
+              achieving 93.48% accuracy.
+
             </p>
 
-        </div>
+
+            <div class="tech-list">
+
+              <span>Python</span>
+              <span>Deep Learning</span>
+              <span>ViT</span>
+              <span>Image Processing</span>
+
+            </div>
+
+          </div>
+
+        </article>
 
 
-        <div class="education-score">
 
-            <strong>
-                7.83
-            </strong>
+        <!-- CREDIT CARD PROJECT -->
 
-            <span>
-                CGPA
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="data:image/png;base64,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"
+              alt="Credit card used for fraud detection project"
+              loading="lazy"
+            >
+
+            <div class="image-shine"></div>
+
+            <span class="project-tag">
+              MACHINE LEARNING
             </span>
 
-        </div>
+          </div>
 
-    </div>
+
+          <div class="project-body">
+
+            <div class="project-meta">
+
+              <span>02</span>
+
+              <span>
+                MAY 2025
+              </span>
+
+            </div>
+
+
+            <h3>
+              Fraud Detection in Credit Card Transactions
+            </h3>
+
+
+            <p>
+
+              A web-based system that classifies credit card
+              transactions as fraudulent or legitimate using
+              XGBoost and SMOTE to work with imbalanced
+              transaction data.
+
+            </p>
+
+
+            <div class="tech-list">
+
+              <span>Python</span>
+              <span>Flask</span>
+              <span>XGBoost</span>
+              <span>SMOTE</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- NOVA PROJECT -->
+
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Nova Personal AI project"
+              loading="lazy"
+            >
+
+            <div class="image-shine"></div>
+
+            <span class="project-tag">
+              ARTIFICIAL INTELLIGENCE
+            </span>
+
+          </div>
+
+
+          <div class="project-body">
+
+            <div class="project-meta">
+
+              <span>03</span>
+
+              <span>
+                PERSONAL PROJECT
+              </span>
+
+            </div>
+
+
+            <h3>
+              Nova Personal AI
+            </h3>
+
+
+            <p>
+
+              A personal AI project focused on creating
+              a useful and natural digital assistant
+              experience for everyday interaction.
+
+            </p>
+
+
+            <div class="tech-list">
+
+              <span>Python</span>
+              <span>AI</span>
+              <span>Web</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- STUDENT SUPPORT PROJECT -->
+
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7WAI5htrwcUz9Ofkr_Cd6cEjImtu7KJyuPliln4_9NKmiW0aS6PmO-Lo&s"
+              alt="Student support ticket management system"
+              loading="lazy"
+            >
+
+            <div class="image-shine"></div>
+
+            <span class="project-tag">
+              WEB APPLICATION
+            </span>
+
+          </div>
+
+
+          <div class="project-body">
+
+            <div class="project-meta">
+
+              <span>04</span>
+
+              <span>
+                PROJECT
+              </span>
+
+            </div>
+
+
+            <h3>
+              Student Support &amp; Ticket Management System
+            </h3>
+
+
+            <p>
+
+              A web application designed to organize student
+              support requests and make ticket-based communication
+              easier to manage.
+
+            </p>
+
+
+            <div class="tech-list">
+
+              <span>Python</span>
+              <span>Django</span>
+              <span>Database</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- EXPERIENCE -->
+
+    <section class="section experience" id="experience">
+
+      <div class="section-label">
+        04 / Experience
+      </div>
+
+
+      <div class="section-intro">
+
+        <h2>
+    
+          gained experience.
+        </h2>
+
+      </div>
+
+
+      <div class="experience-list">
+
+
+        <article class="experience-item">
+
+          <div class="experience-date">
+            JUL 2025
+          </div>
+
+
+          <div class="experience-content">
+
+            <h3>
+              Frontend Development Intern
+            </h3>
+
+
+            <h4>
+              Sify Technologies
+            </h4>
+
+
+            <p>
+
+              Worked on a responsive login page using HTML,
+              CSS, JavaScript and Bootstrap, with a focus on
+              creating a clean and responsive interface.
+
+            </p>
+
+
+            <div class="tech-list">
+
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="experience-item">
+
+          <div class="experience-date">
+            JAN 2026 — MAR 2026
+          </div>
+
+
+          <div class="experience-content">
+
+            <h3>
+              Python Intern
+            </h3>
+
+
+            <h4>
+              Happiest Minds Technologies
+            </h4>
+
+
+            <p>
+
+              Worked with Python, Django and database management,
+              including Django CRUD operations and backend
+              application development.
+
+            </p>
+
+
+            <div class="tech-list">
+
+              <span>Python</span>
+              <span>Django</span>
+              <span>Database</span>
+              <span>CRUD</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- EDUCATION -->
+
+    <section class="section education" id="education">
+
+      <div class="section-label">
+        05 / Education
+      </div>
+      
+
+
+      <div class="education-card">
+        
+        
+            
+
+
+        <div>
+
+          <span class="education-year">
+            2022 — 2026
+          </span>
+
+
+          <h2>
+            B.E. Computer Science
+            and Engineering
+          </h2>
+
+
+          <p>
+            Dr. G.U. Pope College of Engineering
+          </p>
+
+
+          <span class="education-university">
+            Anna University
+          </span>
+          <div class="cgpa">
+
+          <span>
+            CGPA
+          </span>
+
+          <strong>
+            7.83
+          </strong>
+
+        </div>
+         
+
+
+        
+
+
+      </div>
+
+    </section>
 
 
 
     <!-- CERTIFICATIONS -->
 
-    <div class="certifications">
+    <section class="section certifications">
 
-        <h3 class="cert-title reveal">
-            Certifications
-        </h3>
-
-
-        <div class="cert-grid">
+      <div class="section-label">
+        06 / Certifications
+      </div>
 
 
-            <div class="cert-card reveal">
-
-                <span>01</span>
-
-                <h4>
-                    Python Developer
-                </h4>
-
-                <p>
-                    Happiest Minds Technologies
-                </p>
-
-            </div>
+      <div class="cert-grid">
 
 
-            <div class="cert-card reveal">
+        <article class="cert-card">
 
-                <span>02</span>
+          <span>01</span>
 
-                <h4>
-                    Data Science
-                </h4>
+          <h3>
+            Python Developer
+          </h3>
 
-                <p>
-                    Phoenix Softtech Solution
-                </p>
+          <p>
+            Happiest Minds Technologies
+          </p>
 
-            </div>
-
-
-            <div class="cert-card reveal">
-
-                <span>03</span>
-
-                <h4>
-                    App Development
-                </h4>
-
-                <p>
-                    Sify Technologies
-                </p>
-
-            </div>
+        </article>
 
 
-            <div class="cert-card reveal">
+        <article class="cert-card">
 
-                <span>04</span>
+          <span>02</span>
 
-                <h4>
-                    Full Stack Development
-                </h4>
+          <h3>
+            Data Science
+          </h3>
 
-                <p>
-                    NoviTech R&D Private Limited
-                </p>
+          <p>
+            Phoenix Softtech Solution
+          </p>
 
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+        </article>
 
 
+        <article class="cert-card">
 
-<!-- =====================================================
-     CONTACT
-====================================================== -->
+          <span>03</span>
 
-<section
-    class="section contact-section"
-    id="contact"
->
+          <h3>
+            App Development
+          </h3>
 
-    <div class="contact-glow"></div>
+          <p>
+            Sify Technologies
+          </p>
+
+        </article>
 
 
-    <div class="contact-content reveal">
+        <article class="cert-card">
 
-        <p class="eyebrow">
-            HAVE A PROJECT IN MIND?
-        </p>
+          <span>04</span>
+
+          <h3>
+            Full Stack Development
+          </h3>
+
+          <p>
+            NoviTech R&amp;D Private Limited
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section class="section contact" id="contact">
+
+      <div class="contact-inner">
+
+        <span class="section-label">
+          07 / Contact
+        </span>
 
 
         <h2>
-
-            Let's build something
-            <span>
-                meaningful.
-            </span>
-
+          Connect With Me
         </h2>
 
 
         <p>
 
-            Whether it's a web application,
-            AI project or full-stack solution,
-            let's connect.
+          I'm open to opportunities where I can contribute,
+          learn and grow as a developer.
 
         </p>
 
 
         <a
-            href="mailto:muthumenaka705@gmail.com"
-            class="contact-email magnetic"
+          href="mailto:muthumenaka705@gmail.com"
+          class="contact-email"
         >
-
-            muthumenaka705@gmail.com
-
-            <span>
-                ↗
-            </span>
-
-        </a>
-
-    </div>
-
-
-
-    <div class="contact-links reveal">
-
-
-        <a
-            href="mailto:muthumenaka705@gmail.com"
-        >
-
-            <span>
-                EMAIL
-            </span>
-
-            Send an Email ↗
-
+          muthumenaka705@gmail.com
         </a>
 
 
-        <a
-            href="https://www.linkedin.com/in/muthu-menaka-46a31034b"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <div class="contact-links">
 
-            <span>
-                LINKEDIN
-            </span>
-
-            Connect on LinkedIn ↗
-
-        </a>
-
-
-        <a
+          <a
             href="https://github.com/MuthuMenaka705"
             target="_blank"
             rel="noopener noreferrer"
-        >
-
-            <span>
-                GITHUB
-            </span>
-
-            View GitHub ↗
-
-        </a>
-
-    </div>
-
-</section>
-
-</main>
+          >
+            GitHub ↗
+          </a>
 
 
+          <a
+            href="https://www.linkedin.com/in/muthu-menaka-46a31034b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
 
-<!-- =====================================================
-     FOOTER
-====================================================== -->
+        </div>
 
-<footer>
+      </div>
 
-    <div>
+    </section>
 
-        ©
-        <span id="year"></span>
-        Muthu Menaka N
-
-    </div>
-
-
-    <div>
-
-        PYTHON / FULL STACK / AI
-
-    </div>
-
-</footer>
+  </main>
 
 
 
-<script src="script.js"></script>
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <span>
+      © <span id="year"></span> Muthu Menaka N
+    </span>
+
+
+    <span>
+      Built with curiosity &amp; code.
+    </span>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
 
 </body>
 
